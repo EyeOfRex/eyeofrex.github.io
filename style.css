@@ -73,4 +73,27 @@
     justify-content: space-between;
     margin-right: 1.5rem;
   }
+  @media only screen and (max-width: 600px) {
+    /* Lorsque l'écran est plus petit que 600px, on change la disposition */
+    .header {
+      flex-direction: column;
+      align-items: center; /* Centrer les éléments */
+      text-align: center; /* Centrer le texte */
+    }
   
+    /* Espacement entre le titre et les liens */
+    .title {
+      margin-bottom: 1rem; /* Ajoute une marge en bas du titre */
+    }
+  
+    .link {
+      display: flex;
+      justify-content: center; /* Centrer les liens horizontalement */
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .link a {
+      margin: 0.5rem; /* Marge entre les liens */
+    }
+  }
