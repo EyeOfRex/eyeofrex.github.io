@@ -110,6 +110,11 @@
     
 }
 
+.eyeofrex {
+  font-size: 2.6rem;
+  margin-top: -3rem;
+}
+
 .lostheader {
   font-size: 7.5rem;
   letter-spacing: 10px;
@@ -127,6 +132,15 @@
 .lostlink {
   text-align: center;
   margin-top: 0.3rem;
+}
+
+h2 {
+  font-family: "Pacifico", cursive;
+  text-decoration: underline #375a7f;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 6px;
+  font-size: 2.1rem;
+  margin-bottom: 0;
 }
 
 .lostlink a {
@@ -157,18 +171,6 @@
   
     .link a {
       margin: 0.5rem; 
-    }
-
-    .gif-1 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: -25px;
-    }
-  
-    .gif-1 img {
-      max-width: 100%;
-      height: auto;
     }
 
     main {
