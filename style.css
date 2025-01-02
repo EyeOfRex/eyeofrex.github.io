@@ -115,6 +115,14 @@
   margin-top: -3rem;
 }
 
+.abouttext {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.1rem;
+  hyphens: auto;
+  line-height: 1.5;
+  text-indent: 1rem;
+}
+
 .lostheader {
   font-size: 7.5rem;
   letter-spacing: 10px;
