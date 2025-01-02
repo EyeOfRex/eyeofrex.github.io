@@ -31,7 +31,7 @@
     font-family: "Josefin Sans", sans-serif;
     text-decoration: none;
     color: var(--text-light);
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-right: 0.5rem;
     margin-left: 0.5rem;
   }
@@ -45,10 +45,11 @@
     transform: scale(1.1);
     transition: transform 0.3s ease, text-decoration 0.3s ease;
   }
-  
+  main {
+    margin-left: 0.5rem;
+  }
   .title {
     font-size: 2rem;
-    font-weight: bold;
     text-decoration: none;
     font-family: "Pacifico", cursive;
     margin: .67em 0;
@@ -73,27 +74,104 @@
     justify-content: space-between;
     margin-right: 1.5rem;
   }
+  .gif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gif img {
+    max-width: 100%;
+    height: auto;
+  }
+  .gif404 {
+    margin-top: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .gif404 img {
+    max-width: 50%;
+    height: auto;
+  }
+  .badge {
+    font-size: 0.75rem;
+    font-weight: bold;
+    font-family: "Josefin Sans", sans-serif;
+    background-color: #584966;
+    border-radius: 6px;
+    width: fit-content;
+    height: 10px;
+    padding: 0.3rem 0.5rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-top: -1rem;
+    margin-bottom: 10px;
+    
+}
+
+.lostheader {
+  font-size: 7.5rem;
+  letter-spacing: 10px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.losttext {
+ color: #5c5b77;
+ font-family: "Josefin Sans", sans-serif;
+ text-align: center;
+ margin-top: -6rem;
+}
+
+.lostlink {
+  text-align: center;
+  margin-top: 0.3rem;
+}
+
+.lostlink a {
+  color: #78c2ad;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-indent: 1rem;
+}
+
   @media only screen and (max-width: 600px) {
-    /* Lorsque l'écran est plus petit que 600px, on change la disposition */
     .header {
       flex-direction: column;
-      align-items: center; /* Centrer les éléments */
-      text-align: center; /* Centrer le texte */
+      align-items: center; 
+      text-align: center; 
     }
   
-    /* Espacement entre le titre et les liens */
     .title {
-      margin-bottom: 1rem; /* Ajoute une marge en bas du titre */
+      margin-bottom: 1rem; 
     }
   
     .link {
       display: flex;
-      justify-content: center; /* Centrer les liens horizontalement */
+      justify-content: center; 
       margin-left: 0;
       margin-right: 0;
     }
   
     .link a {
-      margin: 0.5rem; /* Marge entre les liens */
+      margin: 0.5rem; 
+    }
+
+    .gif-1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: -25px;
+    }
+  
+    .gif-1 img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    main {
+      margin-left: 1rem;
     }
   }
