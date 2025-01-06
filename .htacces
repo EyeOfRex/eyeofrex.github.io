@@ -1,8 +1,11 @@
-<pre>
+RewriteEngine on
 
-RewriteEngine On
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{REQUEST_URI} ^(.*/)index\.html$ [NC]
+RewriteRule . http://www.%{HTTP_HOST}%1 [R=301,NE,L]
 
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule . http://www.%{HTTP_HOST}%{REQUEST_URI} [NE,R=301,L]
 
-</pre>
+RewriteCond %{REQUEST_URI} ^(.*/)index\.html$ [NC]
+RewriteRule . %1 [R=301,NE,L]
