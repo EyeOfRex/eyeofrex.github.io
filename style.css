@@ -207,4 +207,9 @@ h2 {
     main {
       margin-left: 1rem;
     }
+
+    .gif {
+      margin-top: -2rem;
+      margin-bottom: 1.5rem;
+    }
   }
