@@ -159,6 +159,29 @@ h2 {
   text-indent: 1rem;
 }
 
+.btn-portfolio {
+  font: 900 18px "Josefin Sans", sans-serif;
+  border: 2px solid #78c2ad;
+  border-radius: 8px;
+  background: #0000;
+  color: var(--text-light);
+  text-align: center;
+  padding: 8px 16px;
+  transition: background-color .4s, color .4s;
+}
+
+.btn-portfolio:hover {
+  background-color: #78c2ad;
+  color: var(--text-light);
+  cursor: pointer
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
   @media only screen and (max-width: 600px) {
     .header {
       flex-direction: column;
