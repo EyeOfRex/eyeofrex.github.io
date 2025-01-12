@@ -282,14 +282,14 @@ footer {
   border-color: #78c2ad;
 }
 
-.footer-link {
+.right-link {
   color: #78c2ad;
   text-decoration: none;
   font-size: 15px;
   text-align: center;
 }
 
-.footer-text {
+.right-text {
   margin-top: 1.5rem;
   font-family: "Josefin Sans", sans-serif;
   text-align: center;
