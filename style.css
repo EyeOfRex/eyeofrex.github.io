@@ -299,17 +299,55 @@ footer {
 .works-card {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  padding: 0;
   margin-top: 16px;
+  align-items: center;
+  justify-content: center;
 }
 
 .work-card {
+  list-style: none;
+  margin: 10px;
   width: 233px;
   height: 260px;
-  margin: 0.5rem;
-  color: blue;
-  background-color: #78c2ad;
+  padding: 15px 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+.work-card img {
+  border-radius: 12px;
+  width: 100%;
+  height: auto;
+}
+
+h3 {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: x-large;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.description {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.project {
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+  font-weight: 500;
+  width: 260px;
+  height: 270px;
+}
+
+.work-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
 }
 
 
@@ -342,5 +380,11 @@ footer {
     .gif {
       margin-top: -2rem;
       margin-bottom: 1.5rem;
+    }
+
+    .project:active {
+      transform: scale(1.05);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
     }
   }
