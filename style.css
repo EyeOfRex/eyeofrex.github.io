@@ -350,6 +350,40 @@ h3 {
   border-radius: 12px;
 }
 
+.post-card {
+  list-style: none;
+  margin: 10px;
+  text-align: center;
+  font-weight: 500;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.post-card img {
+  border-radius: 16px;
+  width: 226px;
+  aspect-ratio: auto 226 / 127;
+  height: 127px;
+  margin-top: -10px;
+}
+
+.title-post {
+  margin-top: 10px;
+}
+
+.posts-card {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
 
   @media only screen and (max-width: 600px) {
     .header {
@@ -383,6 +417,12 @@ h3 {
     }
 
     .project:active {
+      transform: scale(1.05);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+      border-radius: 12px;
+    }
+
+    .post-card:active {
       transform: scale(1.05);
       box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
       border-radius: 12px;
